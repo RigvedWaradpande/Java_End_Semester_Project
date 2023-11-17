@@ -33,11 +33,11 @@ public class SpriteSheetAnimation extends Application {
     public static void help(Stage primaryStage) {
         primaryStage.setTitle("Sprite Sheet Animation");
 
-        Button b = new Button("b1");
-        Button b2 = new Button("b2");
-        Button b3 = new Button("b3");
-        Button b4 = new Button("b4");
-        Button b5 = new Button("b5");
+        Button b = new Button("Human");
+        Button b2 = new Button("Giant");
+        Button b3 = new Button("Goblin");
+        Button b4 = new Button("Dwarf");
+        Button b5 = new Button("Vampire");
 
         FlowPane root = new FlowPane(50, 50);
 
@@ -96,11 +96,11 @@ public class SpriteSheetAnimation extends Application {
             }
         });
 
-        Button b11 = new Button("b1");
-        Button b12 = new Button("b2");
-        Button b13 = new Button("b3");
-        Button b14 = new Button("b4");
-        Button b15 = new Button("b5");
+        Button b11 = new Button("Rogue");
+        Button b12 = new Button("Knight");
+        Button b13 = new Button("Mage");
+        Button b14 = new Button("Healer");
+        Button b15 = new Button("Monk");
 
 
         root.getChildren().addAll(b11, b12, b13, b14, b15, new Label(""));
@@ -142,7 +142,7 @@ public class SpriteSheetAnimation extends Application {
                 root.getChildren().add(l);
             }
         });
-        Scene scene = new Scene(root, 400, 400);
+        Scene scene = new Scene(root, 500, 500);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
